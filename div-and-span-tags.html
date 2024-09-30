@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Divs and Spans</title>
+    </head>
+    <body>
+        <div> <!--good for creating containers or grouping elements together-->
+            Sample Text
+        </div> <!--they are block level elements(aka they are stackable)-->
+        <div>Sample Text</div>
+        <div>Sample Text</div> <!--think of as building block-->
+        <div class="container-1">
+            <button>Click Me</button>
+            <div>More Text</div>
+            <div>More Text</div>
+            <div>More Text</div>
+        </div>
+
+        <div id="inputId" title="some cool inputs" class="input-wrapper"> <!--divs will take any global attribute-->
+            <input type="text">
+            <input type="number">
+        </div>
+        <br>
+        <div>Here's some more text</div>
+        <br>
+        <div class="data-row-wrapper">
+            <div onclick="myFunction()" class="data-row">Im a row of data or something</div>
+            <div onclick="myFunction()" class="data-row">Im a row of data or something</div>
+            <div onclick="myFunction()" class="data-row">Im a row of data or something</div>
+            <div onclick="myFunction()" class="data-row">Im a row of data or something</div>
+        </div>
+        <br>
+        <div>I'm about to throw down an icon <span style="color: red;">&#9824;</span> and its about to be cool</div><!--span is an inline element used to mark up part of a text-->
+        <br>
+        <span>Span #1</span>
+        <span>Span #2</span>
+        <div>Span #1 Span #2</div>
+    </body>
+</html>
