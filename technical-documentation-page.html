@@ -3,338 +3,354 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Documentation">
+        <link rel="stylesheet" href="./technical-documentation-page.css">
         <head>Technical Documentation</head>
     </head>
-    <body>
-        <nav>
-            <a href="#introduction">Introduction</a>
-            <a href="#elements-and-tags">Elements and Tags</a>
-            <a href="#Attributes">Attributes</a>
-            <a href="#forms">Forms</a>
-            <a href="#semantic-elements">Semantic Elements</a>
+    <body style="margin: 0; display: flex;">
+        <nav style="width: 200px; background-color: #ffffff; height: 100vh; position: fixed; top: 0; left: 0; overflow: auto;">
+            <ul>
+                <li>
+                    <a href="#introduction">Introduction</a>
+                </li>
+                <li>
+                    <a href="#elements-and-tags">Elements and Tags</a>
+                </li>
+                <li>
+                    <a href="#Attributes">Attributes</a>
+                </li>
+                <li>
+                    <a href="#forms">Forms</a>
+                </li>
+                <li>
+                    <a href="#semantic-elements">Semantic Elements</a>
+                </li>
+            </ul>
         </nav>
-        <section id="introduction">
-            <h2>Introduction to HTML</h2>
-            <section id="what-is-html">
-                <h3>What is HTML (HyperText Markup Language)?</h3>
-                <p>
-                    HTML, or HyperText Markup Language, is the standard language used to create and structure content on the web.
-                    It consists of a series of elements represented by tags that tell the browser how to display content such as text,
-                    images, links, and other multimedia. Every webpage you visit is built using HTML at its core
-                </p>
-            </section>
-            <section id="importance-of-html">
-                <h3>Importance of HTML for Structuring Web Pages</h3>
-                <p>
-                    HTML is the foundation of all web pages, providing the essential structure that defines the hierarchy of elements 
-                    like headings, paragraphs, links, and images. Without HTML, browsers would not know how to render the content 
-                    of a page. It also enables the integration of CSS (Cascading Style Sheets) for styling and JavaScript for 
-                    interactivity, but the layout and basic structure come from HTML.
-                </p>
-            </section>
-            <section id="basic-document-structure">
-                <h3>Basic Document Structure</h3>
-                <p>
-                    Every HTML document follows a standard structure that helps browsers interpret and display the content. 
-                    Below is a breakdown of the basic HTML document structure:
-                </p>
-                <ul>
-                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version of HTML.</li>
-                    <li><code>&lt;html&gt;</code>: Declares the document type and version of HTML.</li>
-                    <li><code>&lt;head&gt;</code>: Declares the document type and version of HTML.</li>
-                    <li><code>&lt;body&gt;</code>: Declares the document type and version of HTML.
-                        images, and more </li>
-                </ul>
-            </section>
-            <section id="example">
-                <h3>Example</h3>
-                <pre>
-                    <code>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html&gt;
-                            &lt;head&gt;
-                                &lt;title&gt;My First Page&lt;/title&gt;
-                            &lt;head&gt;
-                            &lt;body&gt;
-                                &lt;h1&gt;Hello, World!&lt;/h1&gt;
-                                &lt;p&gt;This is a simple example of an HTML document.&lt;/p&gt;
-                            &lt;body&gt;
-                        &lt;/html&gt;
-                    </code>
-                </pre>
-                <p>In this example:</p>
-                <ul>
-                    <li>The <code>&lt;!DOCTYPE html&gt;</code> ensures the browser knows it's working with an HTML5 document.</li>
-                    <li>The <code>&lt;html&gt;</code> tag wraps all other HTML content.</li>
-                    <li>The <code>&lt;head&gt;</code> section includes metadata, and the <code>&lt;title&gt;</code> element defines the page's title that appears in the browser tab.</li>
-                    <li>
-                        The <code>&lt;body&gt;</code> contains the actual content that will be visible on the webpage, like the heading
-                        (<code>&lt;h1&gt;</code>) and paragraph (<code>&lt;p&gt;</code>).
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <section id="elements-and-tags">
-            <h2>HTML Elements and Tags</h2>
-            <section id="difference-between-opening-and-closing-tags">
-                <h3>Difference Between Opening and Closing Tags</h3>
-                <p>
-                    HTML elements are represented by tags. Most tags come in 
-                    pairs: an opening tag and a closing tag. The opening tag starts 
-                    the element, while the closing tag, which includes a forward 
-                    slash <code>/</code>, ends it. For example, a paragraph is enclosed between 
-                    <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code>.
-                </p>
-            </section>
-            <section id="block-level-elements-vs.-inline-elements">
-                <h3>Block-level vs. Inline Elements</h3>
-                <p>
-                    HTML elements can be classified either block-level or inline elements.
-                    <ul type="square">
-                        <li>
-                            Block-level elements(e.g,<code>&lt;div&gt;</code>,<code>&lt;p&gt;</code>,<code>&lt;h1&gt;</code>) occupy the
-                            full width of their container, creating a new line before and 
-                            after the element.
-                        </li>
-                        <li>
-                            Inline elements(e.g,<code>&lt;span&gt;</code>,<code>&lt;a&gt;</code>,<code>&lt;strong&gt;</code>) do not start
-                            on a new line and only take up as much width as necessary,
-                            allowing other elements to appear next to them.
-                        </li>
+        <div style="margin-left: 210px; padding: 20px; width: 100%;">
+
+            <section id="introduction">
+                <h2>Introduction to HTML</h2>
+                <section id="what-is-html">
+                    <h3>What is HTML (HyperText Markup Language)?</h3>
+                    <p>
+                        HTML, or HyperText Markup Language, is the standard language used to create and structure content on the web.
+                        It consists of a series of elements represented by tags that tell the browser how to display content such as text,
+                        images, links, and other multimedia. Every webpage you visit is built using HTML at its core
+                    </p>
+                </section>
+                <section id="importance-of-html">
+                    <h3>Importance of HTML for Structuring Web Pages</h3>
+                    <p>
+                        HTML is the foundation of all web pages, providing the essential structure that defines the hierarchy of elements 
+                        like headings, paragraphs, links, and images. Without HTML, browsers would not know how to render the content 
+                        of a page. It also enables the integration of CSS (Cascading Style Sheets) for styling and JavaScript for 
+                        interactivity, but the layout and basic structure come from HTML.
+                    </p>
+                </section>
+                <section id="basic-document-structure">
+                    <h3>Basic Document Structure</h3>
+                    <p>
+                        Every HTML document follows a standard structure that helps browsers interpret and display the content. 
+                        Below is a breakdown of the basic HTML document structure:
+                    </p>
+                    <ul>
+                        <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version of HTML.</li>
+                        <li><code>&lt;html&gt;</code>: Declares the document type and version of HTML.</li>
+                        <li><code>&lt;head&gt;</code>: Declares the document type and version of HTML.</li>
+                        <li><code>&lt;body&gt;</code>: Declares the document type and version of HTML.
+                            images, and more </li>
                     </ul>
-                </p>
-            </section>
-            <section id="self-closing-tags">
-                <h3>Self-closing Tags</h3>
-                <p>
-                    Some HTML elements do not require closing tags because they
-                    don't enclose any content. These are called self-closing tags.
-                    Examples include <code>&lt;img/&gt;</code> for embedding images and <code>&lt;br /&gt;</code>
-                    for line breaks. Self-closing tags end with a forward slash (<code>/</code>)
-                    before the closing angle bracket.
-                </p>
-            </section>
-            <section id="example">
-                <h3>Example:</h3>
-                <p>
-                    For a quick illustration, here's a simple example:
-                    <ul type="square">
-                        <li>
-                            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>: This is an example of an
-                            opening and closing tag.
-                        </li>
-                        <li>
-                            <code>&lt;img src="image.jpg" alt="Example image"/&gt;</code>: This is an
-                            example of self-closing tag.
-                        </li>
-                    </ul>
-                </p>
-            </section>
-        </section>
-        <section id="Attributes">
-            <h2>HTML Attributes</h2>
-            <section id="definition-of-attributes">
-                <h3>Definition of Attributes</h3>
-                <p>
-                    HTML attributes are additional information provided inside an 
-                    HTML tag that modify the behavior or appearance of an 
-                    element. Attributes typically come in key-value pairs, where the 
-                    key is the attribute name and the value provides specific details. 
-                    For example, in <code>&lt;a href="https://example.com"&gt;</code>, <code>href</code> is the 
-                    attribute name and <code>"https://example.com"</code> is the value.
-                </p>
-            </section>
-            <section id="common-attributes">
-                <h3>Common Attributes</h3>
-                <p>
-                    There are many attributes available in HTML, but some of the
-                    most common ones include:
-                    <ul types="square">
-                        <li>href: Used in <code>&lt;a&gt;</code> tags to define the link destination.</li>
-                        <li>src: Used in <code>&lt;img&gt;</code> tags to specify the source file of an image.</li>
-                        <li>alt: Provides alternative text for images, improving accessibility.</li>
-                        <li>id: Assigns a unique identifier to an element.</li>
-                        <li>class: Groups elements together for styling purposes.</li>
-                        <li>style: Inline CSS for styling individual elements.</li>
-                    </ul>
-                </p>
-            </section>
-            <section>
-                Here's an example of attributes in action:
-                <ul type="square">
-                    <li>
-                        <code>&lt;a href="https://example.com" target="_blank"&gt;Visit 
-                        Example&lt;/a&gt:</code>: The <code>href</code> attribute specifies the link URL, and 
-                        the <code>target</code> attribute ensures the link opens in a new tab.       
-                    </li>
-                    <li>
-                        <code>&lt;img src="image.jpg" alt="A description of the 
-                        image"&gt;</code>: The src attribute defines the image file, and the 
-                        alt attribute provides descriptive text.
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <section id="forms">
-            <h2>HTML Forms</h2>
-            <section id="structure-of-a-form">
-                <h3>Structure of a Form</h3>
-                <p>
-                    An HTML form is a section of a webpage used to collect user 
-                    input and send it to a server. The basic structure of a form 
-                    includes the <code>&lt;form&gt;</code> tag, which wraps all the input elements, 
-                    and the <code>action</code> attribute that defines where the form data 
-                    should be sent. Inside the form, you can include various input 
-                    elements like text fields, buttons, checkboxes, and more.
-                </p>
-            </section>
-            <section id="different-input-types">
-                <h3>Different Input Types</h3>
-                <p>
-                    HTML offers a wide range of input types to handle different 
-                    kinds of data. Some common input types include:
-                    <ul type="square">
-                        <li>text: A simple text input field.</li>
-                        <li>
-                            email: A field specifically for email addresses (validates the 
-                            input format).
-                        </li>
-                        <li>password: A field that hides the input for password entry.</li>
-                        <li>checkbox: Allows users to select one or more options.</li>
-                        <li>radio: Allows users to select one option from a group.</li>
-                        <li>submit: A button that sends the form data to the server.</li>
-                    </ul>
-                </p>
-            </section>
-            <section id="example">
-                <h3>Example</h3>
-                <p>
-                    Here's an example of a simple form with different input types:
+                </section>
+                <section id="example">
+                    <h3>Example</h3>
                     <pre>
                         <code>
-                            &lt;form action="/submit" method="POST"&gt;
-                                &lt;label for="name"&gt;Name:&lt;/label&gt;
-                                &lt;input type="text" id="name" name="name"&gt;
-                                
-                                &lt;label for="email">Email:&lt;/label&gt;
-                                &lt;input type="email" id="email" name="email"&gt;
-                                
-                                &lt;label for="password">Password:&lt;/label&gt;
-                                &lt;input type="password" id="password" name="password"&gt;
-                                
-                                &lt;label for="subscribe">Subscribe to newsletter:&lt;/label&gt;
-                                &lt;input type="checkbox" id="subscribe" name="subscribe"&gt;
-                                
-                                &lt;input type="submit" value="Submit"&gt;
-                            &lt;/form&gt;                          
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;My First Page&lt;/title&gt;
+                                &lt;head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                                    &lt;p&gt;This is a simple example of an HTML document.&lt;/p&gt;
+                                &lt;body&gt;
+                            &lt;/html&gt;
                         </code>
                     </pre>
-                    In this example:
-                    <ul type="square">
+                    <p>In this example:</p>
+                    <ul>
+                        <li>The <code>&lt;!DOCTYPE html&gt;</code> ensures the browser knows it's working with an HTML5 document.</li>
+                        <li>The <code>&lt;html&gt;</code> tag wraps all other HTML content.</li>
+                        <li>The <code>&lt;head&gt;</code> section includes metadata, and the <code>&lt;title&gt;</code> element defines the page's title that appears in the browser tab.</li>
                         <li>
-                            The form collects a name, email, password, and subscription 
-                            preference.
-                        </li>
-                        <li>
-                            It uses a combination of text, email, password, checkbox, 
-                            and submit input types.
-                        </li>
-                    </ul>
-                </p>
-            </section>
-        </section>
-        <section id="semantic-elements">
-            <h2>HTML Semantic Elements</h2>
-            <section id="what-are-semantic-elements">
-                <h3>What Are Semantic Elements?</h3>
-                <p>
-                    Semantic elements in HTML are tags that clearly describe their 
-                    meaning and purpose in a web document. Unlike non-semantic 
-                    elements like <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, semantic elements convey the 
-                    role of the content inside them, making the structure of the 
-                    webpage more meaningful and easier to understand.
-                </p>
-            </section>
-            <section id="why-semantic-elements-improve-readability">
-                <h3>Why Semantic Elements Improve Readability</h3>
-                <p>
-                    Semantic elements improve the readability of code for both 
-                    humans and search engines:
-                    <ul type="square">
-                        <li>
-                            For Humans: Developers can easily understand the 
-                            structure of a webpage when tags like <code>&lt;header&gt;</code>, 
-                            <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> are used. This makes 
-                            collaboration and maintenance more efficient.
-                        </li>
-                        <li>
-                            For Search Engines: Search engines use semantic elements 
-                            to better index and rank websites. By using tags like 
-                            <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>, search engines can 
-                            more accurately interpret the importance of content, which 
-                            can improve SEO.
+                            The <code>&lt;body&gt;</code> contains the actual content that will be visible on the webpage, like the heading
+                            (<code>&lt;h1&gt;</code>) and paragraph (<code>&lt;p&gt;</code>).
                         </li>
                     </ul>
-                </p>
+                </section>
             </section>
-            <section id="examples-of-semantic-elements">
-                <h3>Examples of Semantic Elements</h3>
-                <p>
+            <section id="elements-and-tags">
+                <h2>HTML Elements and Tags</h2>
+                <section id="difference-between-opening-and-closing-tags">
+                    <h3>Difference Between Opening and Closing Tags</h3>
+                    <p>
+                        HTML elements are represented by tags. Most tags come in 
+                        pairs: an opening tag and a closing tag. The opening tag starts 
+                        the element, while the closing tag, which includes a forward 
+                        slash <code>/</code>, ends it. For example, a paragraph is enclosed between 
+                        <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code>.
+                    </p>
+                </section>
+                <section id="block-level-elements-vs.-inline-elements">
+                    <h3>Block-level vs. Inline Elements</h3>
+                    <p>
+                        HTML elements can be classified either block-level or inline elements.
+                        <ul type="square">
+                            <li>
+                                Block-level elements(e.g,<code>&lt;div&gt;</code>,<code>&lt;p&gt;</code>,<code>&lt;h1&gt;</code>) occupy the
+                                full width of their container, creating a new line before and 
+                                after the element.
+                            </li>
+                            <li>
+                                Inline elements(e.g,<code>&lt;span&gt;</code>,<code>&lt;a&gt;</code>,<code>&lt;strong&gt;</code>) do not start
+                                on a new line and only take up as much width as necessary,
+                                allowing other elements to appear next to them.
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+                <section id="self-closing-tags">
+                    <h3>Self-closing Tags</h3>
+                    <p>
+                        Some HTML elements do not require closing tags because they
+                        don't enclose any content. These are called self-closing tags.
+                        Examples include <code>&lt;img/&gt;</code> for embedding images and <code>&lt;br /&gt;</code>
+                        for line breaks. Self-closing tags end with a forward slash (<code>/</code>)
+                        before the closing angle bracket.
+                    </p>
+                </section>
+                <section id="example">
+                    <h3>Example:</h3>
+                    <p>
+                        For a quick illustration, here's a simple example:
+                        <ul type="square">
+                            <li>
+                                <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>: This is an example of an
+                                opening and closing tag.
+                            </li>
+                            <li>
+                                <code>&lt;img src="image.jpg" alt="Example image"/&gt;</code>: This is an
+                                example of self-closing tag.
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+            <section id="Attributes">
+                <h2>HTML Attributes</h2>
+                <section id="definition-of-attributes">
+                    <h3>Definition of Attributes</h3>
+                    <p>
+                        HTML attributes are additional information provided inside an 
+                        HTML tag that modify the behavior or appearance of an 
+                        element. Attributes typically come in key-value pairs, where the 
+                        key is the attribute name and the value provides specific details. 
+                        For example, in <code>&lt;a href="https://example.com"&gt;</code>, <code>href</code> is the 
+                        attribute name and <code>"https://example.com"</code> is the value.
+                    </p>
+                </section>
+                <section id="common-attributes">
+                    <h3>Common Attributes</h3>
+                    <p>
+                        There are many attributes available in HTML, but some of the
+                        most common ones include:
+                        <ul types="square">
+                            <li>href: Used in <code>&lt;a&gt;</code> tags to define the link destination.</li>
+                            <li>src: Used in <code>&lt;img&gt;</code> tags to specify the source file of an image.</li>
+                            <li>alt: Provides alternative text for images, improving accessibility.</li>
+                            <li>id: Assigns a unique identifier to an element.</li>
+                            <li>class: Groups elements together for styling purposes.</li>
+                            <li>style: Inline CSS for styling individual elements.</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    Here's an example of attributes in action:
                     <ul type="square">
                         <li>
-                            <code>&lt;header&gt;</code>: Represents the header section of a page or a 
-                            section of a document.
+                            <code>&lt;a href="https://example.com" target="_blank"&gt;Visit 
+                            Example&lt;/a&gt:</code>: The <code>href</code> attribute specifies the link URL, and 
+                            the <code>target</code> attribute ensures the link opens in a new tab.       
                         </li>
                         <li>
-                            <code>&lt;nav&gt;</code>: Defines a set of navigation links.
-                        </li>
-                        <li>
-                            <code>&lt;article&gt;</code>: Specifies independent, self-contained content 
-                            such as a blog post or news article.
-                        </li>
-                        <li>
-                            <code>&lt;section&gt;</code>: Groups related content together, often used for 
-                            different sections of a page.
-                        </li>
-                        <li>
-                            <code>&lt;footer&gt;</code>: Represents the footer of a page or a section, 
-                            typically containing copyright info or contact details.
+                            <code>&lt;img src="image.jpg" alt="A description of the 
+                            image"&gt;</code>: The src attribute defines the image file, and the 
+                            alt attribute provides descriptive text.
                         </li>
                     </ul>
-                </p>
+                </section>
             </section>
-            <section id="example">
-                <h3>Example:</h3>
-                <p>
-                    <pre>
-                        <code>
-                            &lt;article&gt;
-                                &lt;header&gt;
-                                    &lt;h1&gt;Understanding Semantic Elements&lt;/h1&gt;
-                                    &lt;p&gt;Published on September 30, 2024&lt;/p&gt;
-                                &lt;/header&gt;
-                                &lt;section&gt;
-                                    &lt;p&gt;Semantic elements help improve both code readability and SEO...&lt;/p&gt;
-                                &lt;/section&gt;
-                                &lt;footer&gt;
-                                    &lt;p&gt;Author: John Doe&lt;/p&gt;
-                                &lt;/footer&gt;
-                            &lt;/article&gt;
-                        </code>
-                    </pre>
-                    In this example:
-                    <ul type="square">
-                        <li>
-                            The <code>&lt;article&gt;</code> tag wraps the content, identifying it as an 
-                            independent piece of information.
-                        </li>
-                        <li>
-                            The <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> tags further 
-                            organize the content, making it easier to read and index.
-                        </li>
-                    </ul>
-                </p>
+            <section id="forms">
+                <h2>HTML Forms</h2>
+                <section id="structure-of-a-form">
+                    <h3>Structure of a Form</h3>
+                    <p>
+                        An HTML form is a section of a webpage used to collect user 
+                        input and send it to a server. The basic structure of a form 
+                        includes the <code>&lt;form&gt;</code> tag, which wraps all the input elements, 
+                        and the <code>action</code> attribute that defines where the form data 
+                        should be sent. Inside the form, you can include various input 
+                        elements like text fields, buttons, checkboxes, and more.
+                    </p>
+                </section>
+                <section id="different-input-types">
+                    <h3>Different Input Types</h3>
+                    <p>
+                        HTML offers a wide range of input types to handle different 
+                        kinds of data. Some common input types include:
+                        <ul type="square">
+                            <li>text: A simple text input field.</li>
+                            <li>
+                                email: A field specifically for email addresses (validates the 
+                                input format).
+                            </li>
+                            <li>password: A field that hides the input for password entry.</li>
+                            <li>checkbox: Allows users to select one or more options.</li>
+                            <li>radio: Allows users to select one option from a group.</li>
+                            <li>submit: A button that sends the form data to the server.</li>
+                        </ul>
+                    </p>
+                </section>
+                <section id="example">
+                    <h3>Example</h3>
+                    <p>
+                        Here's an example of a simple form with different input types:
+                        <pre>
+                            <code>
+                                &lt;form action="/submit" method="POST"&gt;
+                                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                                    &lt;input type="text" id="name" name="name"&gt;
+                                    
+                                    &lt;label for="email">Email:&lt;/label&gt;
+                                    &lt;input type="email" id="email" name="email"&gt;
+                                    
+                                    &lt;label for="password">Password:&lt;/label&gt;
+                                    &lt;input type="password" id="password" name="password"&gt;
+                                    
+                                    &lt;label for="subscribe">Subscribe to newsletter:&lt;/label&gt;
+                                    &lt;input type="checkbox" id="subscribe" name="subscribe"&gt;
+                                    
+                                    &lt;input type="submit" value="Submit"&gt;
+                                &lt;/form&gt;                          
+                            </code>
+                        </pre>
+                        In this example:
+                        <ul type="square">
+                            <li>
+                                The form collects a name, email, password, and subscription 
+                                preference.
+                            </li>
+                            <li>
+                                It uses a combination of text, email, password, checkbox, 
+                                and submit input types.
+                            </li>
+                        </ul>
+                    </p>
+                </section>
             </section>
-        </section>
+            <section id="semantic-elements">
+                <h2>HTML Semantic Elements</h2>
+                <section id="what-are-semantic-elements">
+                    <h3>What Are Semantic Elements?</h3>
+                    <p>
+                        Semantic elements in HTML are tags that clearly describe their 
+                        meaning and purpose in a web document. Unlike non-semantic 
+                        elements like <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, semantic elements convey the 
+                        role of the content inside them, making the structure of the 
+                        webpage more meaningful and easier to understand.
+                    </p>
+                </section>
+                <section id="why-semantic-elements-improve-readability">
+                    <h3>Why Semantic Elements Improve Readability</h3>
+                    <p>
+                        Semantic elements improve the readability of code for both 
+                        humans and search engines:
+                        <ul type="square">
+                            <li>
+                                For Humans: Developers can easily understand the 
+                                structure of a webpage when tags like <code>&lt;header&gt;</code>, 
+                                <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> are used. This makes 
+                                collaboration and maintenance more efficient.
+                            </li>
+                            <li>
+                                For Search Engines: Search engines use semantic elements 
+                                to better index and rank websites. By using tags like 
+                                <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>, search engines can 
+                                more accurately interpret the importance of content, which 
+                                can improve SEO.
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+                <section id="examples-of-semantic-elements">
+                    <h3>Examples of Semantic Elements</h3>
+                    <p>
+                        <ul type="square">
+                            <li>
+                                <code>&lt;header&gt;</code>: Represents the header section of a page or a 
+                                section of a document.
+                            </li>
+                            <li>
+                                <code>&lt;nav&gt;</code>: Defines a set of navigation links.
+                            </li>
+                            <li>
+                                <code>&lt;article&gt;</code>: Specifies independent, self-contained content 
+                                such as a blog post or news article.
+                            </li>
+                            <li>
+                                <code>&lt;section&gt;</code>: Groups related content together, often used for 
+                                different sections of a page.
+                            </li>
+                            <li>
+                                <code>&lt;footer&gt;</code>: Represents the footer of a page or a section, 
+                                typically containing copyright info or contact details.
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+                <section id="example">
+                    <h3>Example:</h3>
+                    <p>
+                        <pre>
+                            <code>
+                                &lt;article&gt;
+                                    &lt;header&gt;
+                                        &lt;h1&gt;Understanding Semantic Elements&lt;/h1&gt;
+                                        &lt;p&gt;Published on September 30, 2024&lt;/p&gt;
+                                    &lt;/header&gt;
+                                    &lt;section&gt;
+                                        &lt;p&gt;Semantic elements help improve both code readability and SEO...&lt;/p&gt;
+                                    &lt;/section&gt;
+                                    &lt;footer&gt;
+                                        &lt;p&gt;Author: John Doe&lt;/p&gt;
+                                    &lt;/footer&gt;
+                                &lt;/article&gt;
+                            </code>
+                        </pre>
+                        In this example:
+                        <ul type="square">
+                            <li>
+                                The <code>&lt;article&gt;</code> tag wraps the content, identifying it as an 
+                                independent piece of information.
+                            </li>
+                            <li>
+                                The <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> tags further 
+                                organize the content, making it easier to read and index.
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+        </div>
     </body>
 </html>
