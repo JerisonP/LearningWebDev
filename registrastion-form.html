@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <hr>
+        <h2>Provide your information</h2>
+        <form action="/action_page.php" target="_target" method="post">
+            <label for="name">Name*</label><br>
+            <input 
+                id="name" 
+                type="text"
+                name="name"
+                placeholder="Jon Doe"
+                required
+            ><br>
+            <label for="email">Email*</label><br>
+            <input 
+                id="email" 
+                type="email"
+                name="email"
+                placeholder="jondoe@gmail.com"
+                required
+            ><br>
+            <label for="phonenumber">Telephone</label><br>
+            <input 
+                id="phonenumber" 
+                type="tel"
+                name="phonenumber"
+                placeholder="555-555-555"
+            ><br>
+            <br>
+            <label for="dob">DOB*</label><br>
+            <input 
+                id="dob" 
+                type="date"
+                name="dob"
+                required
+            ><br>
+            <label for="gender">Gender</label><br>
+            <label for="male">
+                <input 
+                    id="male" 
+                    type="radio"
+                    name="gender"
+                >
+                Male
+            </label>
+            <label for="female">
+                <input 
+                    id="female" 
+                    type="radio"
+                    name="gender"
+                >
+                Female
+            </label>
+            <label for="other">
+                <input 
+                    id="other" 
+                    type="radio"
+                    name="gender"
+                >
+                Other
+            </label><br>
+            <br>
+            <label for="household-size">Household size</label><br>
+            <input 
+                id="household-size"
+                type="number"
+                name="household-size"
+                min="0"
+                size="5"
+            ><br>
+            <label for="annual-income">Annual Income</label><br>
+            <input 
+                id="annual-income"
+                type="number"
+                name="annual-income"
+                min="0"
+                placeholder="Less than 40k"
+            ><br>
+            <br>
+            <label for="message">Message</label><br>
+            <textarea 
+                name="message" 
+                id="message"
+                rows="5"
+                cols="50"
+            >
+                add message here...
+            </textarea><br>
+            <br>
+            <label for="password">Password*</label><br>
+            <input 
+                id="password"
+                type="password"
+                name="password"
+                placeholder="password"
+                required
+            ><br>
+            <label for="confirm-password">Confirm Password*</label><br>
+            <input 
+                id="confirm-password"
+                type="password"
+                name="confirm-password"
+                placeholder="password"
+                required
+            ><br>
+            <label for="confirmation">
+                <input 
+                    id="confirmation"
+                    type="checkbox"
+                    name="confirmation"
+                >
+                By signing up, you agree to the <a href="">Terms of Service</a>
+            </label><br>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

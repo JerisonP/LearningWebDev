@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML BASICS</title>
+    </head>
+    <body>
+        <form action="/action_page.php" target="_target" method="post" autocomplete="on"> 
+            <label for="attribute">Input Attributes</label><br><br>
+            
+            <input type="text" id="attribute" value="sample data" size="50" readonly><br>
+            <input type="text" id="attribute" value="sample data" disabled><br>
+            <input type="text" id="attribute" value="sample data" maxlength="15" size="20"><br>
+            <input 
+                type="number" 
+                id="attribute" 
+                value="5"
+                min="5" 
+                max="100"
+                step="5" 
+            ><br> <!-- the max and min only works for a number range date -->
+            
+            <input type="file" multiple>
+            <input type="email" autofocus multiple>
+
+            <input type="text" placeholder="First name" required>
+
+            <br><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

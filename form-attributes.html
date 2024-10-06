@@ -6,9 +6,9 @@
 </head>
 <body>
     <form action="/action_page.php" target="_target" method="get"> <!--never use get method for sensitive data-->
-        <label for="firstname">First Name:</label><br>
-        <input id="firstname" type="text" name="firstname"><br>
-        <label for="lastname">Last Name:</label><br>
+        <label for="firstname">First Name:</label><br> <!--the action attribute defines an action that will be performed after the form is submitted. This can be a link to a file or url-->
+        <input id="firstname" type="text" name="firstname"><br> <!--the target attribute is declaring where we want the response to be displayed "_blank" opens a new browser tab "_self" will display the response in the same frame "_parent" displays it in a parent frame "_top" puts it in the full body of the window-->
+        <label for="lastname">Last Name:</label><br> <!--the method clarifies the http method used to submit the form data "get" or "post", gets should be used when you want to call data from a specified resource get method is the default method. post is used to send data to a server-->
         <input id="lastname" type="text" name="lastname"><br>
     
         <input id="male" name="gender" type="radio" value="male">
